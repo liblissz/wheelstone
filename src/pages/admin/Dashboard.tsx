@@ -32,7 +32,7 @@ export default function Dashboard() {
       setStats([
         { title: "Total Cars", value: "127", change: "+12%", changeType: "positive", icon: Car }, // you can fetch actual car count from backend
         { title: "Total Orders", value: `${totalOrders}`, change: "+8%", changeType: "positive", icon: ShoppingCart },
-        { title: "Total Revenue", value: `$${totalRevenue.toLocaleString()}`, change: "+15%", changeType: "positive", icon: DollarSign },
+        { title: "Total Revenue", value: `£${totalRevenue.toLocaleString()}`, change: "+15%", changeType: "positive", icon: DollarSign },
         { title: "Pending Orders", value: `${pendingOrders}`, change: "-5%", changeType: "negative", icon: Clock },
       ]);
     } catch (err) {
@@ -106,7 +106,7 @@ export default function Dashboard() {
                     <p className="text-sm font-medium text-foreground">
                       {order.cartItems.map((item: any) => item.name).join(", ")}
                     </p>
-                    <p className="text-sm text-muted-foreground">${order.totalPrice}</p>
+                    <p className="text-sm text-muted-foreground">£{order.totalPrice}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
