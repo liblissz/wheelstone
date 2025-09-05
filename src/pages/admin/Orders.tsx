@@ -171,7 +171,7 @@ export default function Orders() {
                     <p className="font-medium">{order.user.name}</p>
                     <p className="text-sm text-muted-foreground">{order.user.email}</p>
                   </TableCell>
-                  <TableCell>${order.totalPrice}</TableCell>
+                  <TableCell>£{order.totalPrice}</TableCell>
                   <TableCell>
                     <Badge className={getPaymentStatusColor(order.paymentmethod)}>
                       {order.paymentmethod || "N/A"}
