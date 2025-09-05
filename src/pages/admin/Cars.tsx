@@ -48,8 +48,8 @@ export default function CarManager() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const CLOUDINARY_URL =
-    "https://api.cloudinary.com/v1_1/dzjv9bvhg/image/upload";
-  const CLOUDINARY_UPLOAD_PRESET = "car_uploads"; // Change to your preset
+    "https://api.cloudinary.com/v1_1/dbq5gkepx/image/upload";
+  const CLOUDINARY_UPLOAD_PRESET = "images-zozac"; // Change to your preset
 
   // Fetch cars from backend
   const fetchCars = async () => {
