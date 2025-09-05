@@ -213,7 +213,7 @@ export default function CarManager() {
             <p>
               {car.make} {car.model} ({car.year})
             </p>
-            <p className="text-gray-700">${car.price}</p>
+            <p className="text-gray-700">£{car.price}</p>
             <p className="text-sm text-gray-500">{car.description}</p>
 
             <div className="flex gap-2 mt-3">
